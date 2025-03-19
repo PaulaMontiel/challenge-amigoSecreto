@@ -1,0 +1,198 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+/* Imagen Header*/
+.img-header{
+    width: 99.8%;
+}
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: transparent;
+    margin: 10px 0;
+    text-align: center;
+    background-image: url("https://plus.unsplash.com/premium_photo-1667811951665-d49118a38f22?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9uZG8lMjBkb3JhZG98ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #DFC0D0;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-container {
+    width: 300px;
+    justify-content: center;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de botón */
+button {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #DFC0D0;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border-radius: 60%;
+    padding: 10px;
+    border-color:2px solid #c58daa;
+}
+
+.button-add {
+    background-color: #c58daa;
+    color: #faf5f8;
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #ab5a84;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("https://www.creativefabrica.com/wp-content/uploads/2022/11/09/Gold-Glitter-Background-With-Bokeh-Lights-45690963-1.png");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Botón de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    padding: 10px 20px;
+    background-color: var(--color-button);
+    font-size: 16px;
+    border-radius: 55%;
+    background-image: url("https://plus.unsplash.com/premium_photo-1667811951665-d49118a38f22?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9uZG8lMjBkb3JhZG98ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+/*iconos*/
+.fa-2x{
+    padding: 10px;
+}
+.fa-trash{
+    padding:10px;
+    border-radius: 55%;
+}
+/*boton borrar*/
+.trash-icon{
+    border-radius: 60%;
+    padding: 10px;
+    border-color:2px solid #c58daa;
+    margin: 5px;
+}
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
